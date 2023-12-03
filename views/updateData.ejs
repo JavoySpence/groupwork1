@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  
+  <form action="/update/<%= person.id %>" method="POST">
+    <input placeholder="Student Name" id="student_name"   value="<%= person.stud_name %>" name="stud_name"  style="width: 20rem;  margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Class" id="class1" name="class1"   value="<%=person.class %>" style="width: 20rem; margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Book Name" id="book_name" name="book_name"  value="<%= person.book_name %>"  style="width: 20rem;margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Book ISBN" id="book_isbn" name="book_isbn"  value="<%=person.book_isbn%>"     style="width: 20rem;margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Book Author" id="book_author" name="book_author"  value="<%=person.book_author %>"       style="width: 20rem;margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Borrowed Date" id="borrowed_date" name="borrowed_date" value="<%=person.borrowed_date %>"   style="width: 20rem;margin-left: 10rem; border-radius: 20px;"><br>
+    <input placeholder="Return Date" id="return_date" name="return_date"  value="<%=person.return_date %>"            style="width: 20rem;margin-left: 10rem; border-radius: 20px;"><br>
+
+    <button type="submit" style="width: 8rem;margin-left: 10rem; border-radius: 20px; background-color: olive;">Submit</button>
+
+       
+</body>
+</html>
